@@ -1,0 +1,93 @@
+﻿{
+  "_id" : ObjectId("5c4db49687b9b2140872487d"),
+  "productName" : "固定期限产品",
+  "productInfoList" : [{
+      "_id" : ObjectId("5c4db49687b9b2140872487e"),
+      "productInfo" : "甄选优质基金"
+    }, {
+      "_id" : ObjectId("5c4db49687b9b2140872488e"),
+      "productInfo" : "省时省力"
+    }, {
+      "_id" : ObjectId("5c4db49687b9b2140872489e"),
+      "productInfo" : "坐等收益"
+    }],
+  "productTypeList" : [{
+      "_id" : ObjectId("5c4db49687b9b2140872487f"),
+      "productName" : "固定期限产品",
+      "productData" : "3",
+      "productRate" : "3.5%",
+      "productMoney" : "1018000"
+    }, {
+      "_id" : ObjectId("5c4db49687b9b2140872488f"),
+      "productName" : "固定期限产品",
+      "productData" : "3-6",
+      "productRate" : "4.50%",
+      "productMoney" : "10000"
+    }, {
+      "_id" : ObjectId("5c4db49687b9b2140872489f"),
+      "productName" : "固定期限产品",
+      "productData" : "6-12",
+      "productRate" : "5.50%",
+      "productMoney" : "1000"
+    }, {
+      "_id" : ObjectId("5c4db49687b9b2140872490f"),
+      "productName" : "固定期限产品",
+      "productData" : "12-24",
+      "productRate" : "5.50%",
+      "productMoney" : "6000"
+    }, {
+      "_id" : ObjectId("5c4db49687b9b2140872491f"),
+      "productName" : "固定期限产品",
+      "productData" : "24",
+      "productRate" : "6.50%",
+      "productMoney" : "1000"
+    }],
+  "__v" : 0
+}
+{
+  "_id" : ObjectId("5c4dda910f8b54210088957d"),
+  "productId" : "10002",
+  "productName" : "活期产品",
+  "productInfoList" : [{
+      "_id" : ObjectId("5c4dda910f8b542100889580"),
+      "productInfo" : "甄选优质基金"
+    }, {
+      "_id" : ObjectId("5c4dda910f8b54210088957f"),
+      "productInfo" : "随时提现"
+    }, {
+      "_id" : ObjectId("5c4dda910f8b54210088957e"),
+      "productInfo" : "即取即用"
+    }],
+  "productTypeList" : [{
+      "_id" : ObjectId("5c4dda910f8b542100889585"),
+      "productName" : "活期产品",
+      "productData" : "0",
+      "productRate" : "0.5%",
+      "productMoney" : "1000"
+    }, {
+      "_id" : ObjectId("5c4dda910f8b542100889584"),
+      "productName" : "活期产品",
+      "productData" : "0",
+      "productRate" : "1.50%",
+      "productMoney" : "1000"
+    }, {
+      "_id" : ObjectId("5c4dda910f8b542100889583"),
+      "productName" : "活期产品",
+      "productData" : "0",
+      "productRate" : "2.50%",
+      "productMoney" : "2000"
+    }, {
+      "_id" : ObjectId("5c4dda910f8b542100889582"),
+      "productName" : "活期产品",
+      "productData" : "0",
+      "productRate" : "2.50%",
+      "productMoney" : "1000"
+    }, {
+      "_id" : ObjectId("5c4dda910f8b542100889581"),
+      "productName" : "活期产品",
+      "productData" : "0",
+      "productRate" : "3.50%",
+      "productMoney" : "1000"
+    }],
+  "__v" : 0
+}

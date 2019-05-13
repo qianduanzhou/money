@@ -1,0 +1,33 @@
+﻿{
+  "_id" : ObjectId("5c4fbcb92731b10cf013fdd6"),
+  "advertId" : "1001",
+  "advertName" : "新年",
+  "advertImgList" : {
+    "L" : "ad002-l.png",
+    "M" : "ad002-m.png",
+    "S" : "ad002.png"
+  },
+  "__v" : 0
+}
+{
+  "_id" : ObjectId("5c4fbd21df9fb919e49db23c"),
+  "advertId" : "1002",
+  "advertName" : "红包",
+  "advertImgList" : {
+    "L" : "ad003-l.png",
+    "M" : "ad003-m.png",
+    "S" : "ad003.png"
+  },
+  "__v" : 0
+}
+{
+  "_id" : ObjectId("5c4fbd31d1ae7e1b28c2989a"),
+  "advertId" : "1003",
+  "advertName" : "报告",
+  "advertImgList" : {
+    "L" : "ad001-l.png",
+    "M" : "ad001-m.png",
+    "S" : "ad001.png"
+  },
+  "__v" : 0
+}

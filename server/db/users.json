@@ -1,0 +1,118 @@
+﻿{
+  "_id" : ObjectId("5c4f0baeb22a3023e82c0399"),
+  "userId" : "10843",
+  "name" : "zhou",
+  "age" : "22",
+  "sex" : "man",
+  "birth" : "2019-02-20",
+  "address" : "广东汕头",
+  "picture" : "1548830185588-MYXJ_20171106174338_save.jpg",
+  "phone" : "13205455",
+  "type" : null,
+  "userName" : "test2",
+  "userPwd" : "123456",
+  "buyList" : [],
+  "__v" : 8
+}
+{
+  "_id" : ObjectId("5c4fd7cb0239401e28691c29"),
+  "userId" : "10914",
+  "name" : "zhou",
+  "age" : "22",
+  "sex" : "man",
+  "birth" : "1987-01-13",
+  "address" : "广东汕头",
+  "picture" : "picture3.jpg",
+  "phone" : "1313131313",
+  "type" : null,
+  "userName" : "zhou",
+  "userPwd" : "123456",
+  "buyList" : [],
+  "__v" : 13
+}
+{
+  "_id" : ObjectId("5c52fd6a9bd7780844c0e633"),
+  "userId" : "10042",
+  "name" : "",
+  "age" : "",
+  "sex" : "",
+  "birth" : "",
+  "address" : "",
+  "picture" : "",
+  "phone" : "",
+  "type" : null,
+  "userName" : "test22",
+  "userPwd" : "123456",
+  "buyList" : [{
+      "boughtTime" : ISODate("2019-01-21T13:51:09.101Z"),
+      "_id" : ObjectId("5c4db49687b9b2140872487f"),
+      "productName" : "固定期限产品",
+      "productData" : "3",
+      "productRate" : "3.5%",
+      "productMoney" : "1018000"
+    }, {
+      "boughtTime" : ISODate("2019-01-31T13:56:30.128Z"),
+      "_id" : ObjectId("5c4db49687b9b2140872488f"),
+      "productName" : "固定期限产品",
+      "productData" : "3-6",
+      "productRate" : "4.50%",
+      "productMoney" : "10000"
+    }, {
+      "boughtTime" : ISODate("2019-01-31T13:56:30.128Z"),
+      "_id" : ObjectId("5c4db49687b9b2140872489f"),
+      "productName" : "固定期限产品",
+      "productData" : "6-12",
+      "productRate" : "5.50%",
+      "productMoney" : "1000"
+    }, {
+      "boughtTime" : ISODate("2019-01-31T13:56:30.128Z"),
+      "_id" : ObjectId("5c4db49687b9b2140872490f"),
+      "productName" : "固定期限产品",
+      "productData" : "12-24",
+      "productRate" : "5.50%",
+      "productMoney" : "6000"
+    }, {
+      "boughtTime" : ISODate("2019-01-31T13:56:30.128Z"),
+      "_id" : ObjectId("5c4db49687b9b2140872491f"),
+      "productName" : "固定期限产品",
+      "productData" : "24",
+      "productRate" : "6.50%",
+      "productMoney" : "1000"
+    }, {
+      "boughtTime" : ISODate("2019-01-31T13:56:30.128Z"),
+      "_id" : ObjectId("5c4dda910f8b542100889585"),
+      "productName" : "活期产品",
+      "productData" : "0",
+      "productRate" : "0.5%",
+      "productMoney" : "1000"
+    }, {
+      "boughtTime" : ISODate("2019-01-31T13:56:30.128Z"),
+      "_id" : ObjectId("5c4dda910f8b542100889584"),
+      "productName" : "活期产品",
+      "productData" : "0",
+      "productRate" : "1.50%",
+      "productMoney" : "1000"
+    }, {
+      "boughtTime" : ISODate("2019-01-31T13:56:30.128Z"),
+      "_id" : ObjectId("5c4dda910f8b542100889583"),
+      "productName" : "活期产品",
+      "productData" : "0",
+      "productRate" : "2.50%",
+      "productMoney" : "2000"
+    }, {
+      "boughtTime" : ISODate("2019-01-31T13:56:30.128Z"),
+      "_id" : ObjectId("5c4dda910f8b542100889582"),
+      "productName" : "活期产品",
+      "productData" : "0",
+      "productRate" : "2.50%",
+      "productMoney" : "1000"
+    }, {
+      "boughtTime" : ISODate("2019-01-31T13:56:30.128Z"),
+      "_id" : ObjectId("5c4dda910f8b542100889581"),
+      "productName" : "活期产品",
+      "productData" : "0",
+      "productRate" : "3.50%",
+      "productMoney" : "1000"
+    }],
+  "__v" : 10
+}

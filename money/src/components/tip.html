@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .container {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            width: 550px;
+            height: auto;
+            transform: translate(-50%, -50%);
+            z-index: 201;
+            background-color: #FFFFFF;
+            border: 1px solid green;
+        }
+
+        .container p {
+            position: relative;
+            color: white;
+            width: 100%;
+            height: 30px;
+            text-align: left;
+            line-height: 30px;
+            box-sizing: border-box;
+            padding-left: 15px;
+            background-color: #83C82F;
+        }
+
+        .container p span {
+            text-align: center;
+            position: absolute;
+            line-height: 20px;
+            top: -1px;
+            right: 5px;
+            font-size: 16px;
+            width: 40px;
+            height: 20px;
+            border: 1px solid #89CA3C;
+            background-color: #A3D660;
+        }
+
+        .container .tip-container {
+            width: 100%;
+            padding: 30px 0;
+            margin: 0 auto;
+            clear: both;
+            display: table;
+            background-color: #FFFFFF;
+        }
+
+        .container .img {
+            float: left;
+            width: 60px;
+            height: 60px;
+            margin: 0 0 5% 25%;
+            background-color: red;
+        }
+
+        .container .tip-title {
+            float: right;
+            width: 200px;
+            height: 50px;
+            box-sizing: border-box;
+            padding: 30px;
+            background-color: blue;
+            margin: 0 20% 5% 0;
+        }
+
+        .container .tip-content {
+            display: block;
+            margin: 0px auto;
+            width: 50%;
+            height: 50px;
+            background-color: yellow;
+            clear: both;
+        }
+
+        .container .button-container {
+            width: 50%;
+            border: 1px solid black;
+            margin: 0 auto;
+            background-color: #FFFFFF;
+            display: flex;
+            margin-bottom: 40px;
+        }
+
+        .container .button-container .button {
+            flex: 1;
+            box-sizing: border-box;
+            
+            width: 40%;
+            height: 50px;
+            background-color: purple;
+        }
+
+        .container .button-container .button:first-child {
+            margin-left: 40px;
+            padding-right: 10px;
+        }
+
+        .container .button-container .button:last-child {
+            margin-right: 40px;
+            padding-left: 10px;
+        }
+
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 200;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="container">
+            <p>提示<span>×</span></p>
+            <section class="tip-container">
+                <div class="img">
+                    <slot name="logo"></slot>
+                </div>
+                <div class="tip-title">
+                    <slot name="title"></slot>
+                </div>
+                <div class="tip-content">
+                    <slot name="content"></slot>
+                </div>
+            </section>
+            <div class="button-container">
+                <div class="button">
+                    <slot name="button1"></slot>
+                </div>
+                <div class="button">
+                    <slot name="button2"></slot>
+                </div>
+            </div>
+        </div>
+        <div class="overlay"></div>
+    </div>
+</body>
+
+</html>
