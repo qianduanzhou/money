@@ -6,6 +6,9 @@ import Register from '../views/Register'
 import test from '../components/test'
 import BuyList from '../views/buyList'
 import Person from '../views/person'
+import Detail from '../views/Detail'
+import Channel from '../views/channel'
+import ChannelDetail from '../views/channelDetail'
 Vue.use(Router)
 
 export default new Router({
@@ -33,6 +36,18 @@ export default new Router({
     {
       path:'/person',
       component:Person
+    },
+    {
+      path:'/productdetail/:id/:name',
+      component:Detail
+    },
+    {
+      path:'/channel',
+      component:Channel
+    },
+    {
+      path:'/channelDetail',
+      component:ChannelDetail
     }
   ]
 })

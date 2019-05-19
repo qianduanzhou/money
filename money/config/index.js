@@ -20,6 +20,9 @@ module.exports = {
       '/uploadimg':{
         target: 'http://localhost:3000'
       },
+      '/detail': {
+        target: 'http://localhost:3000'
+      }
     },
 
     // Various Dev Server settings

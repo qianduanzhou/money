@@ -29,7 +29,7 @@
             </div>
         </div>
         <div class="page">
-            <span @click="pre"></span>
+            <span @click="pre"><</span>
             <span @click="next">></span>
         </div>
         <Tip :tipShow="tipShow" @close="closeTip">
@@ -267,6 +267,7 @@ export default {
 .page span{
     width: 40px;
     line-height: 40px;
+    display: inline-block;
     height: 40px;
     font-size: 20px;
 }

@@ -9,7 +9,7 @@
           <router-link to="/" class="header-nav">首页</router-link>
         </li>
         <li>
-          <router-link to="#" class="header-nav">理财频道</router-link>
+          <router-link to="/channel" class="header-nav">理财频道</router-link>
         </li>
         <li>
           <router-link to="#" class="header-nav">投资频道</router-link>

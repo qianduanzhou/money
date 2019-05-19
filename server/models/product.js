@@ -14,7 +14,8 @@ var productSchema = new Schema({
             "productName":String,
             "productData":String,
             "productRate":String,
-            "productMoney":String
+            "productMoney":String,
+            "productDetail":String
         }
     ]
 })

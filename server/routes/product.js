@@ -146,6 +146,28 @@ router.get('/advert',function(req,res,next) {
 })
 
 
+//  产品详情
+router.get('/detail',function(req,res,next) {
+    Products.findOne({
+        "productName":req.query.name
+    },function(err,products) {
+        if(err) {
+            next()
+        }else {
+            products.productTypeList.forEach((item) => {
+                if(item._id == req.query.id) {
+                    res.json({
+                        status: '0',
+                        msg: '',
+                        result: item
+                    })
+                }
+            })
+        }
+    })
+})
+
+
 // new Adverts({
 //     advertId:1002,
 //     advertName:'报告',

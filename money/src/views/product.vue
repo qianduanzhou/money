@@ -64,7 +64,7 @@
         </em>
       </p>
     </section>
-    <section class="product clearfix" v-for="(item,index) in productList" :key="item.id">
+    <section class="product clearfix" v-for="(item,index) in productList" :key="item.id" >
       <div class="product-title">
         <h1>{{ item.productName}}</h1>
         <b
@@ -76,6 +76,7 @@
         class="product-container"
         v-for="item1 in productList[index].productTypeList"
         :key="item1._id"
+        @click="toDetail(item1)"
       >
         <div class="product-item">
           <p class="time">
@@ -98,7 +99,7 @@
             </p>
           </div>
           <div class="bug">
-            <a href="javascript:;" class="bug-a" @click="bugTip(item1.productName,item1._id)">购买</a>
+            <a href="javascript:;" class="bug-a" @click.stop="bugTip(item1.productName,item1._id)">购买</a>
           </div>
         </div>
       </div>
@@ -126,8 +127,10 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Nav from "../components/Nav";
 import Tip from "../components/Tip";
-import Swiper from "swiper";
+
 import axios from "axios";
+
+import Swiper from "swiper";
 import "swiper/dist/css/swiper.min.css";
 export default {
   components: {
@@ -247,6 +250,9 @@ export default {
              this.money = 1000
           }
        })
+    },
+    toDetail(item) {
+      this.$router.push('/productdetail/'+item._id+'/'+item.productName)
     }
   }
 };
