@@ -167,6 +167,61 @@ router.get('/detail',function(req,res,next) {
     })
 })
 
+//  成交额
+router.get('/report',function (req,res,next) {
+    Users.find({},function (err,users) {
+        if(err) {
+            next(err)
+        }else{
+            let datas = [
+                {
+                    day:1,
+                    money:0,
+                },
+                {
+                    day:2,
+                    money:0,
+                },
+                {
+                    day:3,
+                    money:0,
+                },
+                {
+                    day:4,
+                    money:0,
+                },
+                {
+                    day:5,
+                    money:0,
+                },
+                {
+                    day:6,
+                    money:0,
+                },
+                {
+                    day:7,
+                    money:0
+                }
+            ]
+            let now = new Date().getTime()
+            for(let user of users) {
+                for(let product of user.buyList) {
+                    let day = Math.ceil((now - product.boughtTime.getTime())/1000/60/60/24)
+                    for(let data of datas) {
+                        if(8 - data.day == day) {
+                            data.money = parseInt(data.money) + parseInt(product.productMoney)
+                        }
+                    }
+                }
+            }
+            res.json({
+                code:0,
+                msg:'ok',
+                result:datas
+            })
+        }
+    })
+})
 
 // new Adverts({
 //     advertId:1002,

@@ -132,6 +132,14 @@ import axios from "axios";
 
 import Swiper from "swiper";
 import "swiper/dist/css/swiper.min.css";
+
+//  异步加载 方式一
+// const Header = (resolve) => {
+//   setTimeout(() => {
+//     require(['../components/Header.vue'],resolve)
+//   }, 10);
+// }
+//  异步加载 方式二
 export default {
   components: {
     Header,

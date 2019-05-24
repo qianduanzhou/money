@@ -1,53 +1,44 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Product from '../views/product'
-import Login from '../views/Login'
-import Register from '../views/Register'
-import test from '../components/test'
-import BuyList from '../views/buyList'
-import Person from '../views/person'
-import Detail from '../views/Detail'
-import Channel from '../views/channel'
-import ChannelDetail from '../views/channelDetail'
 Vue.use(Router)
 
 export default new Router({
   routes: [
     {
       path: '/',
-      component: Product
+      component: () => import(/* webpackChunkName: "product" */'../views/product.vue')
     },
     {
       path:'/login',
-      component: Login
+      component: () => import(/* webpackChunkName: "Login" */ '../views/Login')
     },
     {
       path:'/register',
-      component: Register 
+      component: () => import(/* webpackChunkName: "Register" */ '../views/Register.vue')
     },
     {
       path:'/buyList',
-      component: BuyList
-    },
-    {
-      path:'/test',
-      component: test
+      component: () => import(/* webpackChunkName: "buyList" */ '../views/buyList')
     },
     {
       path:'/person',
-      component:Person
+      component: () => import(/* webpackChunkName: "person" */ '../views/person')
     },
     {
       path:'/productdetail/:id/:name',
-      component:Detail
+      component: () => import(/* webpackChunkName: "Detail" */ '../views/Detail')
     },
     {
       path:'/channel',
-      component:Channel
+      component: () => import(/* webpackChunkName: "channel" */ '../views/channel')
     },
     {
       path:'/channelDetail',
-      component:ChannelDetail
+      component: () => import(/* webpackChunkName: "channelDetail" */ '../views/channelDetail')
+    },
+    {
+      path:'/report',
+      component: () => import(/* webpackChunkName: "report" */ '../views/report')
     }
   ]
 })
