@@ -9,13 +9,13 @@
     "body-parser": "^1.18.3",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.9",
-    "express": "~4.16.0",
+    "express": "~4.17.3",
     "hbs": "~4.0.1",
     "morgan": "~1.9.0"
   },
   "devDependencies": {
     "cookie-parser": "^1.4.3",
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "express-session": "^1.15.6",
     "mongoose": "^5.4.6",
     "multer": "^1.4.1"
